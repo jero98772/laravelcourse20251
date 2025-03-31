@@ -16,7 +16,7 @@ Route::get('/about', function () {
 
 Route::get('/products', 'App\Http\Controllers\ProductController@index')->name("product.index");
 Route::get('/products/create', 'App\Http\Controllers\ProductController@create')->name("product.create");
-Route::post('/products/save', 'App\Http\Controllers\ProductController@save')->name("product.save");
+Route::post('/products/save', 'App\Http\Controllers\ProductController@save')->name("product.save");#Try to create a POST Api service, that collects the product name and product price and sends that information to a Laravel Api route (which stores the new product into the database).
 Route::get('/products/{id}', 'App\Http\Controllers\ProductController@show')->name("product.show");
 
 Route::get('/cart', 'App\Http\Controllers\CartController@index')->name("cart.index");
